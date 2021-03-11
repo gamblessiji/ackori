@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Update your plex and shazam plex scans and display your movies and specials with the correct metadata '><title>Plex Myanimelist Agent Plex media server pms metadata agent for myanimelist net</title>
+
+<link rel='canonical' href='https://ackori.vercel.app/posts/plex-myanimelist-agent/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//vg4u8rvq65t6.com/69/29/c1/6929c19bfe090c99ffe7d91526f90658.js'></script><meta property='og:title' content='Plex Myanimelist Agent Plex media server pms metadata agent for myanimelist net'>
+<meta property='og:description' content='Update your plex and shazam plex scans and display your movies and specials with the correct metadata '>
+<meta property='og:url' content='https://ackori.vercel.app/posts/plex-myanimelist-agent/'>
+<meta property='og:site_name' content='ackori'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-06-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-06-10T00:00:00&#43;00:00'/><meta property='og:image' content='https://aws1.discourse-cdn.com/plex/optimized/3X/1/2/1273ed40690f9c49cdff96412dad40da883e279d_2_690x388.jpg' />
+<meta name="twitter:title" content="Plex Myanimelist Agent Plex media server pms metadata agent for myanimelist net">
+<meta name="twitter:description" content="Update your plex and shazam plex scans and display your movies and specials with the correct metadata "><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://aws1.discourse-cdn.com/plex/optimized/3X/1/2/1273ed40690f9c49cdff96412dad40da883e279d_2_690x388.jpg' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "light");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://ackori.vercel.app/">ackori</a></h1>
+        <h2 class="site-description">Best place of Wallpapers for free download. We have about (17073) Wallpapers in jpg format. sort by newest first , lively wallpaper, wallpaper photo.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/plex-myanimelist-agent/">
+                
+                    <img src="https://aws1.discourse-cdn.com/plex/optimized/3X/1/2/1273ed40690f9c49cdff96412dad40da883e279d_2_690x388.jpg" loading="lazy" alt="Featured image of post Plex Myanimelist Agent Plex media server pms metadata agent for myanimelist net" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/plex-myanimelist-agent/">Plex Myanimelist Agent Plex media server pms metadata agent for myanimelist net</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Update your plex and shazam plex scans and display your movies and specials with the correct metadata 
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jun 10, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="https://i.imgur.com/fedyB1pl.png?1"><img alt="Metadata Agents Plex Forums Submitted 1 year ago by kagenish. metadata agents plex forums" src="https://i.imgur.com/fedyB1pl.png?1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5IeIAuZE0k3kZ0HAr3yRbtypy0fZP1P0Eg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x346 - Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x346</li> 
+    <mark>Metadata Agents Plex Forums </mark> Submitted 1 year ago by kagenish.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://a.fsdn.com/con/app/proj/malagent/screenshots/anime-episode-overview.png/max/max/1"><img alt="Malagent Download Sourceforge Net I been using plex now for over 6 months and i love it. sourceforge" src="https://a.fsdn.com/con/app/proj/malagent/screenshots/anime-episode-overview.png/max/max/1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNkVtiYSdaAqUFN194ZJbHvDrPHqJ9x_guQA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1919x868 - Update your plex and shazam plex scans and display your movies and specials with the correct metadata. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1919x868</li> 
+    <mark>Malagent Download Sourceforge Net </mark> Join the online community, create your anime.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://avatars.githubusercontent.com/u/10223913?s=400&amp;v=4"><img alt="Github Fribb Myanimelist Bundle Plex Media Server Metadata Agent For Myanimelist Net Agents are used to fetch information about items in your library. github fribb myanimelist bundle plex" src="https://avatars.githubusercontent.com/u/10223913?s=400&amp;v=4" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLJZXQyv-vtJSopBuyKQKtq2LzwX4B5Tem1g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>400x400 - Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 400x400</li> 
+    <mark>Github Fribb Myanimelist Bundle Plex Media Server Metadata Agent For Myanimelist Net </mark> I wrote this agent in roughly 7 days without knowing python so there should be bugs in it.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://aws1.discourse-cdn.com/plex/original/3X/b/c/bca4462ae5d95e196cbcd857adc9a5f7e294cc19.png"><img alt="Plex Anime Scanner We Need To Scan The Anime We Have The Normal Tv Movie Scanner And Agent Won T Do It For Us Since It Doesn T Have All Plex media server (pms) metadata agent for myanimelist.net. plex anime scanner we need to scan the" src="https://aws1.discourse-cdn.com/plex/original/3X/b/c/bca4462ae5d95e196cbcd857adc9a5f7e294cc19.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTqzHJt_PyxpFq3Lj-GmEQ-TGURfy7OK7AQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>620x861 - The agents accesses an api that is running on my own server, the log files contain the description: </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 620x861</li> 
+    <mark>Plex Anime Scanner We Need To Scan The Anime We Have The Normal Tv Movie Scanner And Agent Won T Do It For Us Since It Doesn T Have All </mark> Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://dij.kamendmi.online/img/plex-anime-agent.jpg"><img alt="Plex Anime Agent Submitted 1 year ago by kagenish. dij" src="https://dij.kamendmi.online/img/plex-anime-agent.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeEqkVRm_dFdQNn0UXWszwyPDxo8vh-wwaLA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1267x1041 - Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1267x1041</li> 
+    <mark>Plex Anime Agent </mark> The agents accesses an api that is running on my own server, the log files contain the description:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.myanimelist.net/images/userimages/2183509.jpg?t=1539360000"><img alt="Lordofsushi S Profile Myanimelist Net I been using plex now for over 6 months and i love it. myanimelist net" src="https://cdn.myanimelist.net/images/userimages/2183509.jpg?t=1539360000" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwRMqHlrIlZUpCe4DP6X5vSXnJ8tUxRL-Vg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>225x249 - Update your plex and shazam plex scans and display your movies and specials with the correct metadata. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 225x249</li> 
+    <mark>Lordofsushi S Profile Myanimelist Net </mark> Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i1.wp.com/fribbtastic.net/wp-content/uploads/2018/08/plexAgent_005.png?ssl=1"><img alt="Myanimelistagent Fribbtastic Net The myanimelistagent is a metadata agent for the plex media server and is used to parse data from a source 06.02.2016 · read the topic about plex media server agent on myanimelist, and join in. myanimelistagent fribbtastic net" src="https://i1.wp.com/fribbtastic.net/wp-content/uploads/2018/08/plexAgent_005.png?ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lw1JHNV8RkhNbF9G4YhUiCxB13bum-3heQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>730x529 - Lately some of my anime are not getting any info/ metadata for them. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 730x529</li> 
+    <mark>Myanimelistagent Fribbtastic Net </mark> Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://aws1.discourse-cdn.com/plex/optimized/3X/a/6/a6f89f3558e8e8946292d2352fcef97c75d9e1d0_2_690x388.jpg"><img alt="Release Myanimelist Net Metadata Agent Development Plex Forum I wrote this agent in roughly 7 days without knowing python so there should be bugs in it. release myanimelist net metadata agent development plex forum" src="https://aws1.discourse-cdn.com/plex/optimized/3X/a/6/a6f89f3558e8e8946292d2352fcef97c75d9e1d0_2_690x388.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOGUL_wGbIBQ5O7R6DhB-VIsRlMXzDg2hjVA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>690x388 - Plex media server settings related to metadata agents. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 690x388</li> 
+    <mark>Release Myanimelist Net Metadata Agent Development Plex Forum </mark> They use various internet sites to fetch things like posters, plot summaries.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://aws1.discourse-cdn.com/plex/optimized/3X/f/d/fdeb692c3fe10dc4a266cb894bae7b9ea197e2ce_2_690x330.jpg"><img alt="Plex Anime Name In Japanese Fasrol Update your plex and shazam plex scans and display your movies and specials with the correct metadata. fasrol weebly" src="https://aws1.discourse-cdn.com/plex/optimized/3X/f/d/fdeb692c3fe10dc4a266cb894bae7b9ea197e2ce_2_690x330.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3crfWrgichE3gQ4yejZNkW3nDNQ0doe7zw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>690x330 - Lately some of my anime are not getting any info/ metadata for them. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 690x330</li> 
+    <mark>Plex Anime Name In Japanese Fasrol </mark> I been using plex now for over 6 months and i love it.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i0.wp.com/fribbtastic.net/wp-content/uploads/2018/08/plexAgent_007.png?resize=740%2C500&amp;ssl=1"><img alt="Myanimelistagent Fribbtastic Net The myanimelistagent is a metadata agent for the plex media server and is used to parse data from a source 06.02.2016 · read the topic about plex media server agent on myanimelist, and join in. myanimelistagent fribbtastic net" src="https://i0.wp.com/fribbtastic.net/wp-content/uploads/2018/08/plexAgent_007.png?resize=740%2C500&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRWea5JDyG-scysxmLm-fmPCkJ2J6CABp6-Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>740x500 - I been using plex now for over 6 months and i love it. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 740x500</li> 
+    <mark>Myanimelistagent Fribbtastic Net </mark> They use various internet sites to fetch things like posters, plot summaries.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://user-images.githubusercontent.com/28101069/90967132-d9ec4480-e4a8-11ea-9f7b-310d61767876.png"><img alt="Hama Not Populating Metadata Issue 418 Zeroqi Hama Bundle Github Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world! hama not populating metadata issue" src="https://user-images.githubusercontent.com/28101069/90967132-d9ec4480-e4a8-11ea-9f7b-310d61767876.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7BKsxmMHBl6ghNNUVFckFVr5iB4lt21ldQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>703x406 - The agents accesses an api that is running on my own server, the log files contain the description: </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 703x406</li> 
+    <mark>Hama Not Populating Metadata Issue 418 Zeroqi Hama Bundle Github </mark> I wrote this agent in roughly 7 days without knowing python so there should be bugs in it.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://a.fsdn.com/con/app/proj/malagent/screenshots/anime-cover-overview.png/max/max/1"><img alt="Malagent Download Sourceforge Net Plex media server settings related to metadata agents. sourceforge" src="https://a.fsdn.com/con/app/proj/malagent/screenshots/anime-cover-overview.png/max/max/1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZq9txjeVFyIoFgo4pTf681pELX2lBI8Uzw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1919x868 - Agents are used to fetch information about items in your library. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1919x868</li> 
+    <mark>Malagent Download Sourceforge Net </mark> I been using plex now for over 6 months and i love it.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://a.fsdn.com/con/app/proj/malagent/screenshots/anime-banner-overview.png/245/183/1"><img alt="Malagent Download Sourceforge Net I been using plex now for over 6 months and i love it. sourceforge" src="https://a.fsdn.com/con/app/proj/malagent/screenshots/anime-banner-overview.png/245/183/1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHuVqADsxD0GanzxkiIV08xmkWSSrLDATMYg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>245x183 - Update your plex and shazam plex scans and display your movies and specials with the correct metadata. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 245x183</li> 
+    <mark>Malagent Download Sourceforge Net </mark> They use various internet sites to fetch things like posters, plot summaries.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAplzXhOoQ6QegUFqF_At_6M"><img alt="Mal Updater Plex Support Forums Myanimelist Net Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world! mal updater plex support forums" src="https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAplzXhOoQ6QegUFqF_At_6M" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINsXUSx-PNKAfhqecGUOrfg5qrUHcBl2I8Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1649x868 - Update your plex and shazam plex scans and display your movies and specials with the correct metadata. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1649x868</li> 
+    <mark>Mal Updater Plex Support Forums Myanimelist Net </mark> Read the topic about plex media server agent on myanimelist, and join in the discussion on the largest online anime and manga database in the world!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://aws1.discourse-cdn.com/plex/original/3X/5/c/5c3eec9e1584795dea43ec82c44c5d16d1d64387.png"><img alt="Rel Http Anidb Metadata Agent Hama Development Plex Forum Submitted 1 year ago by kagenish. rel http anidb metadata agent hama" src="https://aws1.discourse-cdn.com/plex/original/3X/5/c/5c3eec9e1584795dea43ec82c44c5d16d1d64387.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9KKfmJvuOk6bJUysqRKD5Xvp4eVDPo7UcZQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>729x365 - They use various internet sites to fetch things like posters, plot summaries. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 729x365</li> 
+    <mark>Rel Http Anidb Metadata Agent Hama Development Plex Forum </mark> Join the online community, create your anime.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAs-2z062sq5uBX4J6cDbhSs"><img alt="Lordofsushi S Profile Myanimelist Net They use various internet sites to fetch things like posters, plot summaries. myanimelist net" src="https://image.myanimelist.net/ui/OK6W_koKDTOqqqLDbIoPAs-2z062sq5uBX4J6cDbhSs" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8K9i0dP7lxIHqN-e2wlsSl-qiGGrwRSrN2g&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>320x320 - Update your plex and shazam plex scans and display your movies and specials with the correct metadata. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 320x320</li> 
+    <mark>Lordofsushi S Profile Myanimelist Net </mark> The myanimelistagent is a metadata agent for the plex media server and is used to parse data from a source 06.02.2016 · read the topic about plex media server agent on myanimelist, and join in.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.myanimelist.net/r/360x360/images/anime/5/19570.jpg?s=cfc5d9c5573bddfdfe0953c75f22e69d"><img alt="Darker Than Black Kuro No Keiyakusha Darker Than Black Recommendations Myanimelist Net Agents are used to fetch information about items in your library. darker than black kuro no keiyakusha" src="https://cdn.myanimelist.net/r/360x360/images/anime/5/19570.jpg?s=cfc5d9c5573bddfdfe0953c75f22e69d" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4dOOemj963RUVA4gKOap0nbymafbUu6d4IQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>360x360 - Submitted 1 year ago by kagenish. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 360x360</li> 
+    <mark>Darker Than Black Kuro No Keiyakusha Darker Than Black Recommendations Myanimelist Net </mark> The agents accesses an api that is running on my own server, the log files contain the description:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://user-images.githubusercontent.com/32118932/31111372-d0932e94-a7ca-11e7-9c48-35467a9cacb3.png"><img alt="Your Changes Could Not Be Saved Issue 2 Fribb Myanimelist Bundle Github They use various internet sites to fetch things like posters, plot summaries. your changes could not be saved" src="https://user-images.githubusercontent.com/32118932/31111372-d0932e94-a7ca-11e7-9c48-35467a9cacb3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSZ8hcv6_I_nwmXj847KWQZJtVEmDe1AY0qA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>732x535 - The myanimelistagent is a metadata agent for the plex media server and is used to parse data from a source 06.02.2016 · read the topic about plex media server agent on myanimelist, and join in. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 732x535</li> 
+    <mark>Your Changes Could Not Be Saved Issue 2 Fribb Myanimelist Bundle Github </mark> They use various internet sites to fetch things like posters, plot summaries.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.imgur.com/aXQtUVJl.png?1"><img alt="Metadata Agents Plex Forums I wrote this agent in roughly 7 days without knowing python so there should be bugs in it. metadata agents plex forums" src="https://i.imgur.com/aXQtUVJl.png?1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl231KFUak4kzwxVXB4R00bPt9Ti0LN8URwg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x345 - Update your plex and shazam plex scans and display your movies and specials with the correct metadata. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x345</li> 
+    <mark>Metadata Agents Plex Forums </mark> Join the online community, create your anime.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i2.wp.com/fribbtastic.net/wp-content/uploads/2018/08/plexAgent_004.png?resize=740%2C500&amp;ssl=1"><img alt="Myanimelistagent Fribbtastic Net Join the online community, create your anime. myanimelistagent fribbtastic net" src="https://i2.wp.com/fribbtastic.net/wp-content/uploads/2018/08/plexAgent_004.png?resize=740%2C500&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROmcXJGcf3hg1y-LXQRmR2AmiXfcpVKBILnw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>740x500 - Submitted 1 year ago by kagenish. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 740x500</li> 
+    <mark>Myanimelistagent Fribbtastic Net </mark> I wrote this agent in roughly 7 days without knowing python so there should be bugs in it.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 ackori
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo Cuy</a> <br />
+        Theme <b>Reang Cuy v.</b>%!(EXTRA string=2.0.1) designed by <b>Ngopi24Jam.cuy</b>
+    </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4277084,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4277084&101" alt="counter statistics" border="0"></a></noscript>
+
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
